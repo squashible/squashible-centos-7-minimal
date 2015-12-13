@@ -19,5 +19,5 @@ install:
 
 script:
  - cd squashible
- - sudo ansible-playbook -i hosts_generator.py squashible.yml -e "live_os=centos_7"
+ - sudo ansible-playbook -vvv -i hosts_generator.py squashible.yml -e "live_os=centos_7"
  - ls -lha live_output
